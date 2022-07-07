@@ -1,0 +1,9 @@
+.git
+.env
+.vscode
+__pycache__
+.gitignore
+Dockerfile
+nginx
+.commands.sh
+commands.py
