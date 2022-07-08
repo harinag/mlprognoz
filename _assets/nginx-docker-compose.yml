@@ -1,0 +1,11 @@
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf                              # NGINX config file
+      - ./mime.types:/etc/nginx/mime.types                              # mime types for nginx
+      - /var/www/default:/etc/nginx/html/default                        # Default server folder
+      - /var/www/mlprognoz/static:/etc/nginx/html/mlprognoz/static      # Nogsard.ru static folder

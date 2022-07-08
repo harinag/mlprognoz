@@ -2,8 +2,6 @@
 .env
 .vscode
 __pycache__
+_assets
 .gitignore
 Dockerfile
-nginx
-.commands.sh
-commands.py
