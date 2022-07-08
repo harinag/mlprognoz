@@ -2,6 +2,7 @@
 .git/
 .env/
 __pycache__/
+_theme_source/
 *.py[cod]
 *$py.class
 .gitignore

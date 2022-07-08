@@ -8,4 +8,4 @@ templates = Jinja2Templates(directory='templates')
 
 @app.get('/')
 def index(req: Request):
-    return templates.TemplateResponse('base.jinja2', {'request': req})
+    return templates.TemplateResponse('index-landing.jinja2', {'request': req})

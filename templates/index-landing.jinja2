@@ -1,0 +1,246 @@
+{% extends 'base-landing.jinja2' %}
+
+{% block title %}Система прогнозирования потребления ЭЭ{% endblock %}
+
+{% block body %}
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </symbol>
+        <symbol id="chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </symbol>
+    </svg>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">ML-Прогноз</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">Проект</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aims">Задачи</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Команда</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">Система прогнозирования потребления электроэнергии</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">
+                        Программный продукт прогнозирования потребления электроэнергии для сетевых компаний и промышленных предприятий - участников ОРЭ
+                    </p>
+                    <a class="btn btn-primary btn-xl" href="#about">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About-->
+    <section class="page-section bg-primary" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">Прогноз на базе машинного обучения </h2>
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4">
+                        Программный продукт для проведения математического моделирования и прогнозирования потребления
+                        электроэнергии на рынок «сутки вперед» (на каждый час следующих суток), с использованием классических методов
+                        и методов машинного обучения
+                    </p>
+                    <a class="btn btn-light btn-xl" href="#aims">Далее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aims -->
+    <section class="page-section" id="aims">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Задачи проекта</h2>
+            <hr class="divider" />
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Точность</h3>
+                        <p class="text-muted mb-0">Прогнозирование с меньшим допуском ошибок, чем при традиционном подходе</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Скорость</h3>
+                        <p class="text-muted mb-0">Быстрый расчет благодаря использованию оптимальных алгоритмов</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Доступность</h3>
+                        <p class="text-muted mb-0">Система доступна как веб-приложение из любой точки мира</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-clock fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Надежность</h3>
+                        <p class="text-muted mb-0">Доступность приложения 27/7 и защита хранимых данных</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team-->
+    <section class="page-section" id="team">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Команда проекта</h2>
+            <hr class="divider" />
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <!-- Alan Dzgoev -->
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                    </div>
+                    <h2>Алан Дзгоев</h2>
+                    <p>
+                        СКГМИ(ГТУ). Руководитель проекта. Кандидат технических наук.
+                    </p>
+                    <a href="#team" class="icon-link d-inline-flex align-items-center">Подробнее
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                    </a>
+                </div>
+                <!-- S. Karatsev -->
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                    </div>
+                    <h2>С. Карацев</h2>
+                    <p>
+                        СКГМИ (ГТУ). Разработчик ПО. Студент СКГМИ
+                    </p>
+                    <a href="#team" class="icon-link d-inline-flex align-items-center">Подробнее
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                    </a>
+                </div>
+                <!-- H. Abaev -->
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                    </div>
+                    <h2>Х. Абаев</h2>
+                    <p>
+                        СКГМИ (ГТУ). Разработчик ПО. Студент СКГМИ
+                    </p>
+                    <a href="#team" class="icon-link d-inline-flex align-items-center">Подробнее
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                    </a>
+                </div>
+                <!-- Komarov -->
+                <div class="feature col py-5">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                    </div>
+                    <h2>И. Комаров</h2>
+                    <p>
+                        Данные обновляются...
+                    </p>
+                    <a href="#team" class="icon-link d-inline-flex align-items-center">Подробнее
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                    </a>
+                </div>
+                <!-- Alkacev -->
+                <div class="feature col py-5">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                    </div>
+                    <h2>В. Алкацев</h2>
+                    <p>
+                        СКГМИ (ГТУ). Данные обновляются...
+                    </p>
+                    <a href="#team" class="icon-link d-inline-flex align-items-center">Подробнее
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                    </a>
+                </div>
+                <!-- I. Huzmiev -->
+                <div class="feature col py-5">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                    </div>
+                    <h2>Игорь Хузмиев</h2>
+                    <p>
+                        ПАО "Россети СК". Технический консультант проекта. Кандидат технических наук.
+                    </p>
+                    <a href="#team" class="icon-link d-inline-flex align-items-center">Подробнее
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                    </a>
+                </div>
+                <!-- M. Huzmiev -->
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                    </div>
+                    <h2>Максим Хузмиев</h2>
+                    <p>
+                        СКГМИ (ГТУ). Разработчик ПО. Кандидат технических наук, доцент СКГМИ.
+                    </p>
+                    <a href="#team" class="icon-link d-inline-flex align-items-center">Подробнее
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Go to application -->
+    <section class="page-section bg-dark text-white">
+        <div class="container px-4 px-lg-5 text-center">
+            <h2 class="mb-4">Запустить приложение просто!</h2>
+            <a class="btn btn-light btn-xl" href="http://app.nogsard.ru">Вход в приложение</a>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="page-section" id="contact">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <h2 class="mt-0">Контакты</h2>
+                    <hr class="divider" />
+                    <p class="text-muted mb-5">Есть вопросы по использованию продукта или сотрудничества? Обращайтесь по нашим каналам связи:</p>
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                    <div><a href="tel:+79194228473">+7 (919) 422-8473</a></div>
+                </div>
+                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <i class="bi-envelope fs-2 mb-3 text-muted"></i>
+                    <div><a href="mailto:dzgoev_alan@mail.ru">dzgoev_alan@mail.ru</a></div>
+                </div>
+                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <i class="bi-telegram fs-2 mb-3 text-muted"></i>
+                    <div>@Dzgoev_Alan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - ML Прогноз</div></div>
+    </footer>
+
+{% endblock %}
