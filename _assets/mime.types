@@ -15,6 +15,7 @@ types {
   application/java-archive              jar war ear;
   application/mac-binhex40              hqx;
   application/pdf                       pdf;
+  application/pptx                      pptx;
   application/x-cocoa                   cco;
   application/x-java-archive-diff       jardiff;
   application/x-java-jnlp-file          jnlp;
